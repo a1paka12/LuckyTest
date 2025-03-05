@@ -22,15 +22,15 @@ body {
 #inputContainer {
     display: flex;
     justify-content: center;
-    margin: 6vh 0; /* 여백 증가 */
+    margin: 6vh 0;
 }
 
 .digitInput {
-    width: 15vw; /* 너비 증가 */
-    padding: 4vh; /* 패딩 증가 */
-    margin: 0 3vw; /* 여백 증가 */
+    width: 10vw; /* 입력 칸 너비 줄임 */
+    padding: 3vh;
+    margin: 0 2vw;
     text-align: center;
-    font-size: 7vw; /* 글꼴 크기 증가 */
+    font-size: 6vw;
 }
 
 .selected {
@@ -40,25 +40,25 @@ body {
 #numberButtons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 3vw; /* 간격 증가 */
-    margin: 6vh; /* 여백 증가 */
+    gap: 3vw;
+    margin: 6vh;
 }
 
 .numberButton {
-    padding: 5vh; /* 패딩 증가 */
-    font-size: 6vw; /* 글꼴 크기 증가 */
+    padding: 5vh;
+    font-size: 6vw;
 }
 
 #timer {
-    font-size: 5vw; /* 글꼴 크기 증가 */
-    margin-top: 4vh; /* 여백 증가 */
+    font-size: 5vw;
+    margin-top: 4vh;
 }
 
 #answer {
-    font-size: 5vw; /* 글꼴 크기 증가 */
+    font-size: 5vw;
 }
 
 #result {
-    font-size: 5vw; /* 글꼴 크기 증가 */
-    margin-top: 4vh; /* 여백 증가 */
+    font-size: 5vw;
+    margin-top: 4vh;
 }
