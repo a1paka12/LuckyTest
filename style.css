@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#timer {
+    margin: 10px 0;
+}
+
+#answer {
+    font-size: 1.2em;
+}
+
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.digitInput {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.selected {
+    background-color: lightgray;
+}
+
+#numberButtons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.numberButton {
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* 화면 너비가 600px 이하일 때 스타일 변경 */
+@media (max-width: 600px) {
+    .digitInput {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+        font-size: 1em;
+    }
+
+    #numberButtons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        max-width: 200px;
+    }
+
+    .numberButton {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    #startButton {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+
+    #result {
+        font-size: 1em;
+    }
+}
