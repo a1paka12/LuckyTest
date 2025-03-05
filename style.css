@@ -22,15 +22,15 @@ body {
 #inputContainer {
     display: flex;
     justify-content: center;
-    margin: 4vh 0; /* 여백 줄임 */
+    margin: 5vh 0; /* 뷰포트 높이의 5% 여백 */
 }
 
 .digitInput {
-    width: 8vw; /* 입력 칸 너비 줄임 */
-    padding: 2vh; /* 패딩 줄임 */
-    margin: 0 1vw; /* 여백 줄임 */
+    width: 8vw; /* 뷰포트 너비의 8% */
+    padding: 2vh; /* 뷰포트 높이의 2% */
+    margin: 0 2vw; /* 뷰포트 너비의 2% 여백 */
     text-align: center;
-    font-size: 4vw; /* 글꼴 크기 줄임 */
+    font-size: 5vw; /* 뷰포트 너비의 5% 글꼴 크기 */
 }
 
 .selected {
@@ -40,25 +40,25 @@ body {
 #numberButtons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 2vw; /* 간격 줄임 */
-    margin: 4vh; /* 여백 줄임 */
+    gap: 2vw; /* 뷰포트 너비의 2% 간격 */
+    margin: 5vh; /* 뷰포트 높이의 5% 여백 */
 }
 
 .numberButton {
-    padding: 3vh; /* 패딩 줄임 */
-    font-size: 4vw; /* 글꼴 크기 줄임 */
+    padding: 3vh; /* 뷰포트 높이의 3% */
+    font-size: 4vw; /* 뷰포트 너비의 4% 글꼴 크기 */
 }
 
 #timer {
-    font-size: 3vw; /* 글꼴 크기 줄임 */
-    margin-top: 2vh; /* 여백 줄임 */
+    font-size: 4vw;
+    margin-top: 3vh;
 }
 
 #answer {
-    font-size: 3vw; /* 글꼴 크기 줄임 */
+    font-size: 4vw;
 }
 
 #result {
-    font-size: 3vw; /* 글꼴 크기 줄임 */
-    margin-top: 2vh; /* 여백 줄임 */
+    font-size: 4vw;
+    margin-top: 3vh;
 }
