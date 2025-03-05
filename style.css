@@ -12,33 +12,25 @@
 body {
     font-family: sans-serif;
     text-align: center;
-}
-
-h1 {
-    margin-top: 20px;
-}
-
-#timer {
-    margin: 10px 0;
-}
-
-#answer {
-    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #inputContainer {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 5vh 0; /* 뷰포트 높이의 5% 여백 */
 }
 
 .digitInput {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 0 5px;
+    width: 8vw; /* 뷰포트 너비의 8% */
+    padding: 2vh; /* 뷰포트 높이의 2% */
+    margin: 0 2vw; /* 뷰포트 너비의 2% 여백 */
     text-align: center;
-    font-size: 1.2em;
+    font-size: 5vw; /* 뷰포트 너비의 5% 글꼴 크기 */
 }
 
 .selected {
@@ -48,53 +40,25 @@ h1 {
 #numberButtons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    margin: 20px;
-    max-width: 300px;
-    margin: 20px auto;
+    gap: 2vw; /* 뷰포트 너비의 2% 간격 */
+    margin: 5vh; /* 뷰포트 높이의 5% 여백 */
 }
 
 .numberButton {
-    padding: 15px;
-    font-size: 1.2em;
+    padding: 3vh; /* 뷰포트 높이의 3% */
+    font-size: 4vw; /* 뷰포트 너비의 4% 글꼴 크기 */
 }
 
-#startButton {
-    padding: 10px 20px;
-    font-size: 1.2em;
+#timer {
+    font-size: 4vw;
+    margin-top: 3vh;
+}
+
+#answer {
+    font-size: 4vw;
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 1.2em;
-}
-
-/* 화면 너비가 600px 이하일 때 스타일 변경 */
-@media (max-width: 600px) {
-    .digitInput {
-        width: 30px;
-        height: 30px;
-        padding: 3px;
-        font-size: 1em;
-    }
-
-    #numberButtons {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
-        max-width: 200px;
-    }
-
-    .numberButton {
-        padding: 10px;
-        font-size: 1em;
-    }
-
-    #startButton {
-        padding: 8px 16px;
-        font-size: 1em;
-    }
-
-    #result {
-        font-size: 1em;
-    }
+    font-size: 4vw;
+    margin-top: 3vh;
 }
